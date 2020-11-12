@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import { Link, Redirect } from 'react-router-dom';
-// import { BrowserRouter as Router, Link, Route, Redirect} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 class Movie extends Component {
 
@@ -12,12 +11,12 @@ class Movie extends Component {
     const {movieInfo} = this.props
     return (
       <div className='movie'>
-          {movieInfo.isRented?
+          {this.props.rented?
           <i className="fas fa-minus" onClick={this.rentMovie}></i>:
           <i className="fas fa-plus" onClick={this.rentMovie}></i>
           }
           <Link to={{ pathname: '/movies/' + movieInfo.id, movieInfo: movieInfo }}>
-          <img src={movieInfo.img}/>
+          <img src={movieInfo.img} alt=""/>
           </Link>
       </div>
     );

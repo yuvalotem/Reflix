@@ -10,7 +10,7 @@ class MovieDetail extends Component {
         return (
             <div className='movieDetail'>
                 <h3>{movieInfo.title} {movieInfo.year}</h3>
-                <img src={movieInfo.img} />
+                <img src={movieInfo.img} alt="" />
                 <p>{movieInfo.descrShort}</p>
             </div>
         );

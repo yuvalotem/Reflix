@@ -83,7 +83,7 @@ a{
 }
 #catalog-bar{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
@@ -96,7 +96,7 @@ input{
   color: white;
 }
 .User{
-  height: 15vh;
+  height: 20vh;
   width: 20vw;
   border: 3px black solid;
   border-radius: 15px;
@@ -107,7 +107,6 @@ input{
 .User:hover{
   border: 3px white solid;
   padding: white;
-  font-size: 25px;
 }
 img{
   width: 25vw;
