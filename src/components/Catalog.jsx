@@ -72,7 +72,6 @@ class Catalog extends Component {
 
 
     render() {
-        console.log(JSON.parse(localStorage[this.props.match.params.id]));
         return (
             <div className='catalog'>
                 <p id='catalog-bar'>
